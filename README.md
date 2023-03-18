@@ -9,7 +9,7 @@ https://github.com/jamsoft/uap-data-vis-tool/raw/main/downloads/JamSoft.UapTool.
 
 The tool isn't supplied with the JSON data file but will automatically download the latest version for you.
 
-1. Launch the executable by double-clicking the .exe file you just downloaded
+1. Launch the executable by double-clicking the .exe file you just downloaded (** see notes).
 2. Click the Load Hatch Data button
 3. The tool loads the hatch data file (hatch_udb.json) found next to the exe on disk, or it will download it for you.
 4. Explore the data
@@ -17,6 +17,8 @@ The tool isn't supplied with the JSON data file but will automatically download 
 The data has been painstakingly formatted, sourced and processed by Rich Geldreich as part of his UFO Data project which you can find [here](https://github.com/richgel999/ufo_data). Thanks Rich!
 
 Currently this tool only supports the Hatch JSON data file which can be found [here](https://github.com/richgel999/ufo_data/blob/main/bin/hatch_udb.json).
+
+** When launching the tool, you may get a Windows warning about an "unsafe" program saying "Windows protected your PC" this is just due to the tool not currently being signed by my developer certificate, just click "More Info", then the "Run anyway" button.
 
 # Supported Platforms
 
