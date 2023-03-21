@@ -20,6 +20,26 @@ Currently this tool only supports the Hatch JSON data file which can be found [h
 
 ** When launching the tool, you may get a Windows warning about an "unsafe" program saying "Windows protected your PC" this is just due to the tool not currently being signed by my developer certificate, just click "More Info", then the "Run anyway" button.
 
+# Data Selection
+
+### Dates
+The tool at the moment shows some of the basic statistics and various time related data visualisations. The data can be selected based on date ranges using the `From` and `To` controls. Some predefined date ranges are also selectable in the combobx/drop down menu.
+
+### Description
+You can use the Description textbox to specify a word to filter the data based on the contents of the description field.
+
+### Country
+
+You can also filter the data based on individual countries using the country dropdown.
+
+## Time Series
+
+The Time series can also be specified in terms of the time slice size.
+
+# Google Maps
+
+Individual sightings can be viewed in Google Maps by double clicking on a data row in the Raw Data View.
+
 # Supported Platforms
 
 Currently the tool only supports 64-bit Windows, we have MacOS and Linux versions incoming once I've had enough time to test these builds.
