@@ -25,8 +25,10 @@ Currently this tool only supports the Hatch JSON data file which can be found [h
 ### Dates
 The tool at the moment shows some of the basic statistics and various time related data visualisations. The data can be selected based on date ranges using the `From` and `To` controls. Some predefined date ranges are also selectable in the combobx/drop down menu.
 
+If for any country or description search string you use and the charts vanish, it's possible that the matching cases are outside the date range you have currently selected. Bash the `All Dates` button to ensure the entire database is included by dates.
+
 ### Description
-You can use the Description textbox to specify a word to filter the data based on the contents of the description field.
+You can use the Description text box to specify a word to filter the data based on the contents of the description field.
 
 ### Country
 
@@ -34,7 +36,7 @@ You can also filter the data based on individual countries using the country dro
 
 ## Time Series
 
-The Time series can also be specified in terms of the time slice size.
+The Time series can also be specified in terms of the time slice size. Normal will plot as per the data, 30 minutes and 60 minutes (the default) groups cases into these time boxes to flatten out the trend line.
 
 # Google Maps
 
@@ -63,5 +65,7 @@ Happy UAP'ing!
 # Roadmap
 
 MORE DATA PLEASE!!
+
+Looks like I've just sourced an absolute mountain of data, watch this space.
 
 More default charts and different pivots for data comparisons, ideas most welcome.
