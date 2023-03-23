@@ -14,8 +14,6 @@ The tool isn't supplied with the JSON data file but will automatically download 
 3. The tool loads the hatch data file (hatch_udb.json) found next to the exe on disk, or it will download it for you.
 4. Explore the data
 
-The data has been painstakingly formatted, sourced and processed by Rich Geldreich as part of his UFO Data project which you can find [here](https://github.com/richgel999/ufo_data). Thanks Rich!
-
 Currently this tool only supports the Hatch JSON data file which can be found [here](https://github.com/richgel999/ufo_data/blob/main/bin/hatch_udb.json).
 
 ** When launching the tool, you may get a Windows warning about an "unsafe" program saying "Windows protected your PC" this is just due to the tool not currently being signed by my developer certificate, just click "More Info", then the "Run anyway" button.
@@ -69,3 +67,7 @@ MORE DATA PLEASE!!
 Looks like I've just sourced an absolute mountain of data, watch this space.
 
 More default charts and different pivots for data comparisons, ideas most welcome.
+
+# Credits
+
+The data has been painstakingly formatted, sourced and processed by Rich Geldreich as part of his UFO Data project which you can find [here](https://github.com/richgel999/ufo_data). Thanks Rich!
