@@ -5,26 +5,32 @@
 Download the tool here:
 https://github.com/jamsoft/uap-data-vis-tool/raw/main/downloads/JamSoft.UapTool.exe
 
-## Loading Data
+## Initially Loading Data
 
-The tool isn't supplied with the Hatch JSON data file but it will automatically download the latest version for you.
+The tool isn't supplied with the Hatch JSON data file or the UPDB data file but it will automatically download the latest versions for you and import the data.
 
-1. Launch the executable by double-clicking the .exe file you just downloaded (** see notes).
-2. Click the Load Hatch Data button
-3. The tool loads the Hatch data file (hatch_udb.json) found next to the exe on disk. 
+1. Launch the executable by double-clicking the .exe file you just downloaded.
+2. Click one of the `Load xxxx` buttons
+3. The tool will the run the various processes to load the data. 
    1. if the file is not already there on disk, it will download it for you.
 4. Explore the data
 
-Currently this tool only supports the Hatch JSON data file which can be found [here](https://github.com/richgel999/ufo_data/blob/main/bin/hatch_udb.json) if you want to download it manually.
+The Larry Hatch JSON data file is [here](https://github.com/richgel999/ufo_data/blob/main/bin/hatch_udb.json) if you want to download it manually.
 
-** When launching the tool, you may get a Windows warning about an "unsafe" program saying "Windows protected your PC" this is just due to the tool not currently being signed by my developer certificate, just click "More Info", then the "Run anyway" button.
+The UPDB data file is [here](https://huggingface.co/datasets/findjammer/updb/tree/main) if you want to download it manually.
+
+> When launching the tool, you may get a Windows warning about an "unsafe" program saying "Windows protected your PC" this is just due to the tool not currently being signed by my developer certificate, just click "More Info", then the "Run anyway" button.
+
+> If you wish to reset the import process or start from scratch, simply delete the database file (uapdb.ufo) and restart the import process.
 
 # Data Selections
 
 ### Dates
 The tool at the moment shows some of the basic statistics and various time related data visualisations. The data can be selected based on date ranges using the `From` and `To` controls. Some predefined date ranges are also selectable in the drop down menu.
 
-If for any country or description search string you specify results in empty charts it's possible that any matching cases are outside the date range you have currently selected. To auto expand the date range simply click the `All Dates` button to ensure the entire database is not being excluded by date.
+If for any country or description search string you specify results in empty charts it's possible that any matching cases are outside the date range you have currently selected. To auto expand the date range simply click the `All Dates` button to ensure the entire database is included by date.
+
+> WARNING: Selections spanning the entire dataset if you have imported the UPDB can take some time to process as it calculates statistics.
 
 ### Description
 You can use the Description text box to specify a word to filter the data on. The filter is applied to the contents of the description field. You can also use the toggle switch to invert the selection and exclude sighting events containing the specified term.
@@ -33,14 +39,16 @@ You can use the Description text box to specify a word to filter the data on. Th
 
 You can also filter the data based on individual countries using the country dropdown.
 
+Once you have your filter set-up, click the `Apply Filter` button to filter the database and calculate the statistics.
+
 # Basic Statistics Series
-The basic statistics view shows pie charts of each of the main characteristics of the selected data, such as Country, Locale, Time of Day etc.
+The basic statistics view shows pie charts of each of the main characteristics of the selected data, such as Country, Time of Day etc.
 
 ![Pies](/img/pies.png "Pies")
 
 # Time Series
 
-The Time series breaks down the sighting by time of day. The series can also be configured in terms of the time slice size. Normal will plot as per the data, 30 minutes and 60 minutes (the default) groups cases into these time boxes to flatten out the trend line.
+The Time series breaks down the sighting by time of day. The series can also be configured in terms of the time slice size. Normal will plot in 15 minute slices, 30 minutes and 60 minutes (the default) groups cases into these time boxes to flatten out the trend line.
 
 ![Time Series](/img/time.png "Time Series")
 
@@ -88,5 +96,7 @@ More default charts and different pivots for data comparisons, ideas most welcom
 # Credits
 
 The data has been painstakingly formatted, sourced and processed by Rich Geldreich as part of his UFO Data project which you can find [here](https://github.com/richgel999/ufo_data). Thanks Rich!
+
+[UPDB data set](https://updb.app/)
 
 ![UFO](/img/ufo.png "Ufo Logo")
