@@ -15,7 +15,7 @@ A desktop application to import, standardise and visualise various UAP data sour
 ## Download for Linux
 
 [Linux x64](https://github.com/jamsoft/uap-data-vis-tool/raw/main/downloads/JamSoft.UapTool)
-
+> Once downloaded you may have to set it as executable in order to launch, right-click -> properties -> permissions -> Execute
 ## Initially Loading Data
 
 The tool isn't supplied with the Hatch JSON data file or the UPDB data file but it will automatically download the latest versions for you and import the data.
