@@ -1,9 +1,20 @@
-# UAP Data Visualisation Tool
+# UAP Data Visualisation Tool `v1.4.0`
 
-## Getting started
+## Introduction
 
-Download the tool here:
-https://github.com/jamsoft/uap-data-vis-tool/raw/main/downloads/JamSoft.UapTool.exe
+What is this?
+
+A desktop application to import, standardise and visualise various UAP data sources. Importing both the UPDB and Hatch data sources will put `318,477` individual sighting events into a searchable database and visualisation tool.
+
+# Getting started
+
+## Download for Windows
+
+[Windows x64](https://github.com/jamsoft/uap-data-vis-tool/raw/main/downloads/JamSoft.UapTool.exe)
+> When launching the tool, you may get a Windows warning about an "unsafe" program saying "Windows protected your PC" this is just due to the tool not currently being signed by my developer certificate, just click "More Info", then the "Run anyway" button.
+## Download for Linux
+
+[Linux x64](https://github.com/jamsoft/uap-data-vis-tool/raw/main/downloads/JamSoft.UapTool)
 
 ## Initially Loading Data
 
@@ -19,9 +30,7 @@ The Larry Hatch JSON data file is [here](https://github.com/richgel999/ufo_data/
 
 The UPDB data file is [here](https://huggingface.co/datasets/findjammer/updb/tree/main) if you want to download it manually.
 
-> When launching the tool, you may get a Windows warning about an "unsafe" program saying "Windows protected your PC" this is just due to the tool not currently being signed by my developer certificate, just click "More Info", then the "Run anyway" button.
-
-> If you wish to reset the import process or start from scratch, simply delete the database file (uapdb.ufo) and restart the import process.
+> If you wish to reset the import process or start from scratch, simply delete the database file (uapdb.ufo) and restart an import process.
 
 # Data Selections
 
@@ -30,7 +39,7 @@ The tool at the moment shows some of the basic statistics and various time relat
 
 If for any country or description search string you specify results in empty charts it's possible that any matching cases are outside the date range you have currently selected. To auto expand the date range simply click the `All Dates` button to ensure the entire database is included by date.
 
-> WARNING: Selections spanning the entire dataset if you have imported the UPDB can take some time to process as it calculates statistics.
+> **WARNING**: Selections spanning the entire dataset if you have imported the UPDB can take some time to process as it calculates statistics.
 
 ### Description
 You can use the Description text box to specify a word to filter the data on. The filter is applied to the contents of the description field. You can also use the toggle switch to invert the selection and exclude sighting events containing the specified term.
@@ -63,7 +72,7 @@ These charts aggregate together certain collections of terms often quoted in rel
 
 # Raw Data View
 
-The raw data view allows you to view each complete event entry for the given set of active filters. The data can be sorted in ascending and descending over by clicking on the column headers. You can also sort on multiple columns by holding `SHIFT` and clicking on the column headers.
+The raw data view allows you to view each complete event entry for the given set of active filters. The data can be sorted in ascending and descending order by clicking on the column headers. You can also sort on multiple columns by holding `SHIFT` and clicking on the column headers.
 
 ![Raw Data View](/img/raw-data.png "Raw Data View")
 
@@ -77,7 +86,7 @@ Individual sighting links can be viewed in your default browser by holding `CTRL
 
 # Supported Platforms
 
-Currently the tool only supports 64-bit Windows, we have MacOS and Linux versions incoming once I've had enough time to test these builds.
+Currently the tool only supports 64-bit Windows & Linux, we have MacOS version incoming once I've had enough time to test the build.
 
 # Issues & Feature Requests
 
@@ -87,9 +96,7 @@ Happy UAP'ing!
 
 # Roadmap
     
-MORE DATA PLEASE!!
-
-Looks like I've just sourced an absolute mountain of data, watch this space.
+MORE DATA PLEASE!! Let us know if you want any data source added to the tool in the future.
 
 More default charts and different pivots for data comparisons, ideas most welcome.
 
