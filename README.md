@@ -6,6 +6,8 @@ What is this?
 
 A desktop application to import, standardise and visualise various UAP data sources. Importing both the UPDB and Hatch data sources will put `318,477` individual sighting events into a searchable database and visualisation tool.
 
+![Pies](/img/pies.png "Pies")
+
 # Getting started
 
 ## Download for Windows
